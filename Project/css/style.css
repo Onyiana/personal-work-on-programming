@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html, body{
+    overflow-x: hidden;
+    width: 100%;
+  position: relative;
+}
+#navbar{
+    background-color: rgb(202, 19, 19);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: #fff;
+    padding: 8px 1.5rem;
+    font-size: 18px;
+}
+.navlinks{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 50px;
+    list-style:none;
+}
+.navlinks a{
+    text-decoration: none;
+    color: #fff;
+}
+#About-me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 2rem;
+}
+#About-me ul li {
+    padding: 1rem 0;
+    font-size: 18px;
+}
+.contactbn {
+    text-align: center;
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+  
+}
+.contactmebn {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: rgb(202, 19, 19);
+    color: #fff;
+    border-radius: 50px;
+}
+
+.ri-menu-line, .ri-close-circle-line{
+    display: none;
+}
+
+.contactSection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+}
+
+.contactSection div{
+    margin: 1rem 0;
+}
+
+input[type=text],input[type=number],input[type=password],input[type=email]{
+    border: 1px solid #333;
+    border-radius: 50px;
+    padding: 6px 10px;
+    box-sizing: border-box;
+    width: 300px;
+    margin-top: 10px;
+
+}
+
+textarea{
+    width: 300px;
+    margin-top: 10px;
+}
+
+input[type=submit]{
+    padding: 9px 30px;
+    margin: 0 auto;
+    background-color: rgb(202, 19, 19);
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+}
+
+/* .contactSection  */
+
+@media screen and (max-width:768px) {
+    #navbar{
+        justify-content: space-between;
+        padding: 1.5rem 3rem;
+    }
+
+    #About-me {
+        flex-direction: column;
+    }
+
+    #About-me ul{
+        width: 100%;
+        text-align: center;
+    }
+
+    #About-me img{
+        width: 50%;
+        text-align: center;
+    }
+
+    .ri-menu-line, .ri-close-circle-line{
+        display: block;
+        font-size: 20px;
+    }
+
+    .ri-menu-line:hover, .ri-close-circle-line:hover{
+        cursor: pointer;
+    }
+
+    .navlinks{
+        flex-direction: column;
+        position: absolute;
+        width: 200px;
+        top: 0;
+        background-color: rgb(202, 19, 19);
+        right: -200px;
+        height: 100vh;
+        z-index: 1;
+        transition: .5s;
+    }
+}

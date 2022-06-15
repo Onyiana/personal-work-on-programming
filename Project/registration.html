@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header id="navbar">
+        <h1>Registration Page</h1>
+        <i class="ri-menu-line">o</i>
+        <ul class="navlinks">
+            <i class="ri-close-circle-line">c</i>
+            <li>
+                <a href="/">About me</a>
+            </li>
+
+            <li>
+                <a href="/contact.html">Contact</a>
+            </li>
+
+            <li>
+                <a href="/registration.html">Registration</a>
+            </li>
+
+            <li>
+                <a href="/login.html">Login</a>
+            </li>
+        </ul>
+    </header>
+    <main class="contactSection">
+        <form>
+            <div>
+                <label for="firstName">First Name</label><br />
+                <input type="text" name="firstName" id="" placeholder="Onyinye" required>
+            </div>
+
+            <div>
+                <label for="LastName">Last Name</label><br />
+                <input type="text" name="lastName" id="" placeholder="Ananaba" required>
+            </div>
+
+            <div>
+                <label for="PhoneNumber">Number</label><br />
+                <input type="number" name="PhoneNumber" id="" required>
+            </div>
+            <div>
+                <label for="Gender">Gender</label><br />
+                <div>
+                    <label for="">Male</label>
+                    <input type="radio" name="gender" id="" required>
+                </div>
+                <div>
+                    <label for="">Female</label>
+                    <input type="radio" name="gender" id="" required>
+                </div>
+                <div>
+                    <label for="">Others</label>
+                    <input type="radio" name="gender" id="" required>
+                </div>
+            </div>
+
+            <div>
+                <label for="Country">Country</label><br />
+                <input type="text" name="country" id="" placeholder="USA" required>
+            </div>
+
+            <div>
+                <label for="State/Province">State or Province</label><br />
+                <input type="text" name="State/Province" id="" Placeholder="Anambra" required>
+            </div>
+            <div>
+                <label for="Email">Email</label><br />
+                <input type="email" name="email" id="" placeholder="onyinye@gmail.com" required>
+            </div>
+
+            <div>
+                <label for="Password">Password</label><br />
+                <input type="password" name="password" id="" placeholder="Passsword" required>
+            </div>
+
+            <div>
+                <label for="Passsword">Confirm Password</label><br />
+                <input type="password" name="password" id="" placeholder="confirm Passsword" required>
+            </div>
+            <div style="text-align:center;">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </main>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>

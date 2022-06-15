@@ -1,0 +1,153 @@
+/* css reset properties for resetting the whole web page and it remove all default styling given by the html document */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* css variables */
+:root{
+    --red:rgb(255, 122, 122);
+    --green:hsl(154, 100%, 45%);
+    --blue:hsl(248, 32%, 49%);
+    --dark-blue:hsl(249, 10%, 26%);
+    --grayish-blue:hsl(246, 25%, 77%);
+    --white:#fff;
+    --black: rgb(209, 209, 209);
+}
+/* styling the whole body tag */
+body{
+    overflow-x: hidden;
+}
+
+/* this line of code is for centering things in the web */
+.mainSection{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 7rem;
+    background-image:url(/Images/bg-intro-desktop.png), linear-gradient(rgba(255, 122, 122),rgba(255, 122, 122));
+    height: 100vh;
+    width: 100vw;
+}
+
+/* this is used to make the content stay side by side like the form and the text */
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+/* this is for styling the text inside the header */
+#code {
+    width: 500px;
+    color: var(--white);
+}
+
+/* for changing the font size of the code */
+#code h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+    line-height: 38px;
+}
+
+/* this is for styling the whole form */
+.form {
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 500px;
+    text-align: center;
+    box-shadow: 0px 1px 2px var(--dark-blue);
+}
+
+/*styling the input text  */
+input[type="text"], input[type="email"], input[type="password"], input[type="submit"]{
+    width: 100%;
+    margin-top: 14px;
+    height: 2.8rem;
+    padding-left: 20px;
+    border-radius: 3px;
+    border: 0.3px solid var(--black);
+}
+
+input[type="text"]:focus, input[type="email"]:focus, input[type="password"]:focus, input[type="submit"]:focus{
+    border: 1.5px solid var(--blue);
+    outline: none;
+    border-radius: 3px;
+}
+
+.form p, .form span{
+    font-size: 12px;
+}
+
+.form p{
+    color: var(--grayish-blue);
+}
+
+input[type="submit"]{
+    background-color: var(--green);
+    color: var(--white);
+    border: none;
+    box-shadow: 1px 1px 2px var(--grayish-blue);
+    margin-bottom: 10px;
+}
+
+#formHeading{
+    background-color: var(--blue);
+    width: 500px;
+    color: var(--white);
+    margin: 0.8rem auto;
+    padding: 0.8rem;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px var(--dark-blue);
+}
+
+#formSection{
+    text-align: center; 
+    margin-left: 3.5rem;
+}
+
+@media screen and (max-width:768px) {
+    .container{
+        flex-direction: column;
+        /* padding: 2rem 1.5rem; */
+    }
+
+    .form{
+        width: 400px;
+        margin: 0 auto;
+    }
+
+    .mainSection{
+        background-image:url(/Images/bg-intro-mobile.png), linear-gradient(rgba(255, 122, 122),rgba(255, 122, 122));
+        text-align: center;
+        height: 150vh;
+        top: 70%;
+    }
+
+    #formHeading, #code{
+        width: 400px;
+    }
+    #formSection{
+        margin-left: 0;
+    }
+
+    #code h1 {
+        font-size: 1.8rem;
+    }
+
+    #code p{
+        margin: 1rem 0 2rem 0;
+    }
+
+    #formHeading{
+        padding: 1rem 5rem;
+    }
+    
+    
+}

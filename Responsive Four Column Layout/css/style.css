@@ -1,0 +1,60 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    text-align: center;
+        height: 100vh;
+        top: 50%;
+}
+
+.mainsection {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding-top: 10rem;
+    margin: auto;
+    height: 100vh;
+    width: 100vw;
+} 
+
+
+#layout {
+    width: 25%;
+    padding: 8px;
+    float: left;
+    border-radius: 5px;
+    box-shadow: rgb(11, 3, 92) 5px 1rem;
+}
+
+.response {
+    text-align: center;
+    padding: 5px;
+}
+
+.response h1, p{
+    color: rgb(4, 4, 58);
+}
+
+p {
+    padding: 10px;
+    font-size: 18px;
+}
+
+@media screen and (max-width:50rem) {
+    #layout {
+    width: 50%;
+
+    }
+}
+
+@media screen and (max-width:40rem) {
+    #layout {
+    width: 100%;
+    }
+}
+
+p {
+    padding: 10px;
+}

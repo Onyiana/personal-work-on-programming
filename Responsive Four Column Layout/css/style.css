@@ -73,5 +73,6 @@ p {
 
     .Box{
         grid-column: 1/5;
+        margin-bottom: 30px;
     }
 }
